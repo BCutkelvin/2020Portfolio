@@ -1,2 +1,2 @@
-Kotlin JavaScript demo - updated resume
+Website development and automation demo portfolio
 
