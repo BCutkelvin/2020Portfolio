@@ -1,85 +1,145 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <!--METATAGS -->
+
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge" >
+    <!--
+        Bryan Cutkelvin
+        2020
+        -this markup is using Bootstrap and CSS for educational purposes.
+    -->
+  	<meta name ="viewport" content="width = device-width, initial-scale=1">
+    <meta name = "description"  content = "Bryan Cutkelvin, Front End Web Developer Portofilio" >
+    <meta name = "author"       content = "Bryan Cutkelvin">
+    <meta name = "keywords"     content = "Bryan Cutkelvin, QA Engineer,
+    Automation Engineer, Software Developer in Test, Front End Web Developer,
+    Senior QA Engineer, Test Analyst, Front End Web Developer Portofilio,
+     Automation Engineer, web development, Cutkelvin, Linked In, GitHub,
+     Twitter, Perfect World, Electronic Arts, Sony, game development,
+      Quality Assurance, HTML5, CSS3, javascript, Bootstrap, ModDB,
+       Escape::Protocol" >
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--favicon-->
+    <link rel="icon"  type="image/png"  href="***/2020portfolio_favicon.jpg">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--Google fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Mina' rel='stylesheet'>
+	  <title>Bryan Cutkelvin: Web Development Portfolio - Yummly career</title>
 
 	<style>
 		body, html
 		{
 		  height: 100%;
+      font-family: 'Mina';
+      font-size: 32px;
 		}
+
+    p
+    {
+      text-align: center;
+      color: white;
+    }
+
+    body
+    {
+      background-color: #e16120;
+    }
 
 		.parallax1
 		{
-		  /* The image used */
-		  background-image: url('***/BCutkelvin_QAEngineer_Yummly1.jpg');
-
-		  /* Full height */
-		  height: 100%;
-
-		  /* Create the parallax scrolling effect */
-		  background-attachment: fixed;
-		  background-repeat: no-repeat;
-		  background-size: cover;
-		}
-
-		.parallax2
-		{
 			/* The image used */
-			background-image: url('***/BCutkelvin_QAEngineer_Yummly2.jpg');
+			background-image: url('***/BCutkelvin_QAEngineer_Yummly2_1.jpg');
 
 			/* Full height */
-			height: 100%;
+			height: 75%;
 
 			/* Create the parallax scrolling effect */
 			background-attachment: fixed;
 			background-repeat: no-repeat;
-			background-size: cover;
+			position: relative;
+			overflow: auto;
+			background-position: center;
+		}
+
+		.parallax2
+		{
+		  /* The image used */
+		  background-image: url('***/BCutkelvin_QAEngineer_Yummly1.jpg');
+      background-size: 768px 512px;
+
+		  /* Full height */
+		  height: 75%;
+
+		  /* Create the parallax scrolling effect */
+		  background-attachment: fixed;
+		  background-repeat: no-repeat;
+			position: relative;
+			overflow: auto;
+			background-position: center;
 		}
 
 		.parallax3
 		{
 			/* The image used */
 			background-image: url('***/BCutkelvin_QAEngineer_Yummly3.jpg');
+      background-size: 1024px 512px;
 
 			/* Full height */
-			height: 100%;
+			height: 75%;
 
 			/* Create the parallax scrolling effect */
 			background-attachment: fixed;
-			background-position: center;
 			background-repeat: no-repeat;
-			background-size: cover;
+			position: relative;
+			overflow: auto;
+			background-position: center;
 		}
-
 	</style>
 
 </head>
 	<body>
-
 		<div class="parallax1"></div>
-
-		<p>
-		Scroll Up and Down this page to see the parallax scrolling effect.
-		This div is just here to enable scrolling.
-		Tip: Try to remove the background-attachment property to remove the scrolling effect.
-		<p>
-
-		<div class="parallax2"></div>
-
-		<p>
-		Scroll Up and Down this page to see the parallax scrolling effect.
-		This div is just here to enable scrolling.
-		Tip: Try to remove the background-attachment property to remove the scrolling effect.
-		<p>
+		<p>Yummly is the world's #1 recipe engine and cooking recommendation site.
+       There you will find many wonderful recipes, diets, grocery ordering, blogs,
+       articles and even cooking instructions even by professional chefs!</p>
 
 		<div class="parallax3"></div>
+		<p>Yummly, which is a subsidiary of Whirlpool, technologies includes a website, mobile applications,
+      a Smart Thermometer IoT device, integration with smart home technology and featured Whirlpool
+      appliances.</p>
 
-		<p>
-		Scroll Up and Down this page to see the parallax scrolling effect.
-		This div is just here to enable scrolling.
-		Tip: Try to remove the background-attachment property to remove the scrolling effect.
-		<p>
+    <div class="parallax2"></div>
+    <p>Yummly is an easy way to find and favorite recipes that conform to your
+      personal tastes, diets and cooking pleasure.</p>
+
+		<a href = "***/index_IN_PROGRESS.html#"
+		class = "btn btn-primary btn-md">HOME <span class = "glyphicon glyphicon-home"></span>
+	  </a>
+
+		<a href = "***/yummly.html" style = "float: right;"
+		class = "btn btn-primary btn-md">TOP <span class = "glyphicon glyphicon-arrow-up"></span>
+		</a>
+
+		<!--calling JQuery and other.js libraries -->
+		<!--these should preferably be placed at the bottom -->
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src = "***/bootstrap.min.js"></script>
+
+		<footer class="blog-footer">
+			<!-- W3C Markup Validation Service Check the markup (HTML, XHTML, …) of
+			; as of Web documents; validaton as of October 2020 -->
+			<p>
+					<a href="https://validator.w3.org/check?uri=referer"><img
+							src="http://www.w3.org/Icons/valid-xhtml10"
+							alt="Valid XHTML 1.0!" height="31" width="88" /></a>
+			</p>
+		</footer>
 
 	</body>
 </html>

@@ -10,7 +10,7 @@
     <!--
         Bryan Cutkelvin
         2020
-        -this markup using Bootstrap for educational purposes.
+          -this markup is using Bootstrap for educational purposes.
     -->
   	<meta name ="viewport" content="width = device-width, initial-scale=1">
     <meta name = "description"  content = "Bryan Cutkelvin, Front End Web Developer Portofilio" >
@@ -24,17 +24,30 @@
        Escape::Protocol" >
 
     <!--favicon-->
-    <link rel="icon"  type="image/png"  href="***/favicon/2020portfolio_favicon.jpg">
+    <link rel="icon"  type="image/png"  href="***/2020portfolio_favicon.jpg">
     <!--javascripts-->
 
     <!-- Custom styles for this template -->
-    <!--TODO BLOCKED!-->
-    <!--link href="***/portfolio.css" rel="stylesheet"-->
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <title>Bryan Cutkelvin: Web Development Portfolio</title>
+
+    <!-- customer header nav carousel buttons-->
+    <style>
+        .white-background {background-color:#ff8000}
+        .orange{color:#ffffff}
+        .black{color:#000000}
+
+        body{ background-color: #d9d9d9; }
+        .text-primary { color:#0072ce!important; }
+        .text-primary1 { color:#bd1b21!important; }
+        .text-primary2 { color:#91c532!important; }
+        .text-primary3 { color:#e16120!important; }
+        .text-success {color:##17a2b8!important; }
+    </style>
+
   </head>
   <body>
 
@@ -45,42 +58,62 @@
       <header class="blog-header py-3">
         <div class="row flex-nowrap justify-content-between align-items-center"></div>
       </header>
-      <div class="nav-scroller py-1 mb-2">
-        <nav class="nav d-flex justify-content-between">
-          <a href = "***/yummly.html"
-          class = "btn-primary btn-lg btn-warning" role="button">Yummly</a>
-          <a href = "***/playstation.html"
-          class = "btn-primary btn-lg" role="button">PlayStation</a>
-          <a href = "https://www.perfectworld.com/"
-          class = "btn-primary btn-lg btn-danger" role="button">Perfect World</a>
-          <a href = "https://www.ea.com/"
-          class = "btn-primary btn-lg btn-info" role="button">Electronic Arts</a>
-          <a href = "https://www.porsche.com/usa/"
-          class = "btn-primary btn-lg btn-success" role="button">Porsche</a>
-          <a href = "https://www.youtube.com/channel/UCiZEqLs9CcvlTT-kyZqXSYA"
-          class = "btn-primary btn-lg btn-danger" role="button">Gaming</a>
-          <a href = "http://static.lawrencehallofscience.org/scienceview/scienceview.berkeley.edu/html/view/view_assets/timelapse/yesterdayview.mp4"
-          class = "btn-primary btn-lg disabled" role="button">Scenery</a>
-          <div class = "btn-group btn-group-log" role = "group">
-            <button class="btn-lg btn-default"
-            disabled = "disabled"
-            style = "cursor:pointer;"
-            title = "In Progress..."
-            onclick ="window.location.href='***BCutkelvin_AWSCertifiedCloudPractitionercertificate.jpg';">
-              AWS Associate Solutions Arhitect
-            </button>
-            <button class="btn-lg btn-default" onclick ="window.location.href='***/AWS+Certified+Cloud+Practitioner+certificate.pdf';">
-              AWS Cloud Practioner
-            </button>
-            <button class="btn-lg btn-default" onclick ="window.location.href='***/website_resume.html';">
-              Resume
-            </button>
-            <button class="btn-lg btn-default" onclick ="window.location.href='https://github.com/MrBCut';">
-              GitHub
-            </button>
-          </div>
-        </nav>
-      </div>
+        <div class="nav-scroller py-1 mb-2">
+          <nav class="nav d-flex justify-content-between">
+            <a href = "***/yummly.html"
+            class = "orange btn-lg white-background" role="button">Yummly</a>
+            <a href = "***/playstation.html"
+            class = "btn-primary btn-lg" role="button">PlayStation</a>
+            <a href = "***/perfectworld.html"
+            class = "btn-primary btn-lg btn-danger" role="button">Perfect World</a>
+            <a href = "***/ea.html"
+            class = "btn-primary btn-lg btn-dark-green" role="button">Electronic Arts</a>
+            <div class = "dropdown">
+                <button class = "btn-primary btn-lg btn-danger"
+                      type = "button"
+                      id = "dropdownMenu1"
+                      data-toggle = "dropdown"
+                      aria-haspopup= "true">
+                    <span class = "caret"></span>Gaming
+                </button>
+                <ul class = "dropdown-menu">
+                  <li><a href = "https://www.youtube.com/user/bcut">You Tube</a></li>
+                  <li><a href = "https://www.mobygames.com/developer/sheet/view/developerId,217019/">Moby Games</a></li>
+                  <li><a href = "https://www.moddb.com/members/mrbcut">ModDB</a></li>
+                </ul>
+            </div>
+            <div class = "dropdown">
+                <button class = "btn-primary btn-lg btn-warning"
+                      type = "button"
+                      data-toggle = "dropdown"
+                      aria-haspopup= "true">
+                    <span class = "caret"></span>AWS certifcation & training
+                </button>
+                <ul class = "dropdown-menu">
+                  <li><a href = "#" style = "cursor:pointer;" title = "In Progress...">
+                    Associate Solutions Architect</a></li>
+                  <li><a href = "***/BCutkelvin_AWSCertifiedCloudPractitionercertificate.jpg">Certified Cloud Practioner</a></li>
+                  <li><a href = "***/BCutkelvin_ArchitectAssociate_training.jpg">Assoc. Sol. Architect Exam Readiness Workshop</a></li>
+                  <li><a href = "***/bryanCutkelvin_exitCertifiedCertificate_awsSystemsOperationsCertification.jpg">Systems Operations Training</a></li>
+                  <li><a href = "***/bryanCutkelvin_exitCertifiedCertificate_awsTechnicalEssentialsCertification.jpg">Technical Essentials</a></li>
+                </ul>
+            </div>
+            <div class = "dropdown">
+                <button class = "btn btn-default btn-lg"
+                      type = "button"
+                      data-toggle = "dropdown"
+                      aria-haspopup= "true">
+                    <span class = "caret"></span>About Me
+                </button>
+                <ul class = "dropdown-menu">
+                  <li><a href = "***/website_resume.html">Resume</a></li>
+                  <li><a href = "https://github.com/MrBCut">GitHub</a></li>
+                  <li><a href = "https://www.linkedin.com/in/bryancutkelvin/">Linked In</a></li>
+                </ul>
+            </div>
+
+          </nav><!-- end ../nav-->
+        </div>
       <!--end header navigaion links-->
 
       <div class="jumbotron">
@@ -102,6 +135,8 @@
                 >PS5 Pre Order sold out everywhere :(</a>
                 <a href="https://meedios.com/playstation-plus-check-out-the-free-games-for-october/9151/"
                 >PlayStation Plus Member Games for October 2020</a>
+                <a href="https://www.thesixthaxis.com/2020/10/07/ps5-teardown-side-panels-how-to-install-ssd/"
+                >PS5 teardown</a>
             </div>
           </div>
         </div><!--end module 1-->
@@ -109,11 +144,13 @@
         <div class="col-md-6">
           <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
             <div class="col p-4 d-flex flex-column position-static">
-              <h3 class="mb-0"><strong class="d-inline-block mb-2 text-success">Electronic Arts</strong></h3>
+              <h3 class="mb-0"><strong class="d-inline-block mb-2 text-primary2">Electronic Arts</strong></h3>
                 <a href="https://www.ign.com/articles/the-sims-4-star-wars-journey-to-batuu-is-a-neat-way-to-fight-for-or-against-the-resistance-with-cute-droids">
                   Sims 4 & Star Wars EP</a>
                 <a href="https://www.hollywoodreporter.com/news/microsoft-electronic-arts-team-to-bring-ea-play-to-xbox-game-pass">
                     XBox Game Pass & EA Play</a>
+                <a href="https://bleedingcool.com/games/electronic-arts-announces-need-for-speed-hot-pursuit-remastered/">
+                    Need For Speed: Hot Pursuit Remastered!</a>
             </div>
          </div>
         </div><!--end module 1-->
@@ -125,9 +162,11 @@
         <div class="col-md-6">
           <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
             <div class="col p-4 d-flex flex-column position-static">
-              <h3 class="mb-0"><strong class="d-inline-block mb-2 text-primary">Perfect World</strong></h3>
-              <a href="www.google.com">article 1</a>
-              <a href="www.google.com">article 2</a>
+              <h3 class="mb-0"><strong class="d-inline-block mb-2 text-primary1">Perfect World</strong></h3>
+              <a href="https://www.gamasutra.com/view/pressreleases/371433/THE_KLINGON_WAR_RAGES_ON_FOR_STAR_TREK_ONLINE_WITH_HOUSE_SHATTERED.php">Start Trek Online: Klingon War House Shattered</a>
+              <a href="https://www.shacknews.com/article/120622/torchlight-3-gets-10-release-date-leaving-early-access-in-october">Torchlight 3 - 1.0 release date</a>
+              <a href="https://bleedingcool.com/games/neverwinter-avernus-launches-second-redeemed-citadel-episode/">Neverwinter: Avernus Launches Second Redeemed Citadel Episode</a>
+
             </div>
           </div>
         </div><!--end module 3-->
@@ -138,8 +177,9 @@
               <h3 class="mb-0"><strong class="d-inline-block mb-2 text-success">Video Game News...</strong></h3>
               <a href="https://gaminglyfe.com/microsoft-to-acquire-zenimax-media-and-its-game-publisher-bethesda-softworks-2/">
               Microsoft Acquires Bethesda Softworks</a>
-              <a href="www.google.com">article 1</a>
-              <a href="www.google.com">article 2</a>
+              <a href="https://www.usnews.com/news/technology/articles/2020-10-07/tiktok-to-become-principal-partner-of-esports-team-tundra">Tik Tok & eSports!</a>
+              <a href="https://techcrunch.com/2020/10/06/tokyo-based-virtual-reality-game-developer-thirdverse-gets-8-5-million-series-a/">
+                Virtual Reality: Thirdverse is a game developer Thirdverse getting 8.5 million funding!</a>
             </div>
          </div>
        </div><!--end module 4-->
@@ -153,10 +193,11 @@
           <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
             <div class="col p-4 d-flex flex-column position-static">
               <h3 class="mb-0"><strong class="d-inline-block mb-2 text-success">Amazon Web Services</strong></h3>
-              <a href="www.google.com">
-              Microsoft Acquires Bethesda Softworks</a>
-              <a href="www.google.com">article 1</a>
-              <a href="www.google.com">article 2</a>
+              <a href="https://www.infoq.com/news/2020/10/aws-amazon-timestream-ga/">
+              AWS announces Timestream: a serverless database that exposes time-series data.</a>
+              <a href="https://www.healthcareitnews.com/news/amazon-security-tool-can-help-automate-risk-management-readiness">
+                Amazon security. A tool for risk management readiness</a>
+              <a href="https://thenextweb.com/syndication/2020/10/05/alexa-teach-me-how-to-teach-you/">Alexa Tutorial</a>
             </div>
           </div>
         </div><!--end module 5-->
@@ -167,7 +208,9 @@
               <h3 class="mb-0"><strong class="d-inline-block mb-2 text-success">Security</strong></h3>
               <a href="https://www.komando.com/security-privacy/smart-plugs-hacked/757290/">
               Smartplugs can be hacked...to catch fire!</a>
-              <a href="www.google.com">article 2</a>
+              <a href="https://www.bbc.com/news/technology-54418933">Grindr accounts Hacked</a>
+              <a href="https://latesthackingnews.com/2020/07/07/duckduckgo-collected-users-browsing-data-addressed-the-glitch/">
+                DuckDuckGo Glitch: Allow Users Browsing Data to be collected</a>
             </div>
           </div>
         </div><!--end module 6-->
@@ -179,8 +222,9 @@
           <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
             <div class="col p-4 d-flex flex-column position-static">
               <h3 class="mb-0"><strong class="d-inline-block mb-2 text-success">Networking</strong></h3>
-              <a href="www.google.com">article 1</a>
-              <a href="www.google.com">article 2</a>
+              <a href="https://www.embedded-computing.com/guest-blogs/the-history-and-evolution-of-ddos-attacks">The History and Evolution of DDoS Attacks</a>
+              <a href="https://www.bizjournals.com/sanjose/news/2020/10/05/cisco-patent-judgment-centripetal.html">Cisco Systems: $1.9B judgment for patent infringement</a>
+              <a href="https://www.infoq.com/news/2020/09/ethernet-40th/">It's the 40th Anniversary of The Ethernet!</a>
             </div>
           </div>
         </div><!--module 7-->
@@ -189,8 +233,9 @@
           <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
             <div class="col p-4 d-flex flex-column position-static">
               <h3 class="mb-0"><strong class="d-inline-block mb-2 text-success">Technology News...</strong></h3>
-              <a href="www.google.com">article 1</a>
-              <a href="www.google.com">article 2</a>
+              <a href="https://www.engadget.com/apple-iphone-12-october-13-161144893.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAACqQNS3gMRtO2e5pPYls2bRgU0UfB6OAsY8gHuQhSefm3VlblJNrC4SnCqeVbXxkOmvoCjsLus3bcQTF5Wt1A7d9L1RWcH2KCgZiPF_vJUqJ38TNWSe9cVd0a_AFD4hQMRmpgZhrra12xpQjPzenAv5zrbSp-PdySXzIsYMqAWuC">Apple iPhone 12 reveal set for October 13th</a>
+              <a href="https://www.cnn.com/2020/10/01/media/google-news-publishers-payments/index.html">Google agrees to pay $1 billion to news publishers</a>
+              <a href="https://www.al-monitor.com/pulse/originals/2020/10/facebook-turkey-rebuff-social-media-law-ankara.html">Turkey’s has a social media law and Facebook does not like it</a>
             </div>
           </div>
         </div><!--module 8-->
@@ -205,9 +250,11 @@
           <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
             <div class="col p-4 d-flex flex-column position-static">
               <h3 class="mb-0"><strong class="d-inline-block mb-2 text-success">Porsche</strong></h3>
-              <a href="www.google.com">article 1</a>
-              <a href="www.google.com">article 2</a>
-              </div>
+              <a href="https://www.motorauthority.com/news/1118509_2021-porsche-911-gt3-sports-car-spy-shots-video">
+                2021 Porsche 911 GT3 seen!</a>
+              <a href="https://carbuzz.com/news/porsche-continues-strong-recovery-in-the-us">Top Porsches sold in United States</a>
+              <a href="https://electrek.co/2020/09/22/taycan-electric-car-porsches-best-selling-car-destroys-panamera-sales/">Porsche Taycan is well accepted!</a>
+            </div>
           </div>
         </div><!--end module 9-->
         <!--module 10-->
@@ -215,8 +262,10 @@
           <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
             <div class="col p-4 d-flex flex-column position-static">
               <h3 class="mb-0"><strong class="d-inline-block mb-2 text-success">Sports Car News...</strong></h3>
-              <a href="www.google.com">article 1</a>
-              <a href="www.google.com">article 2</a>
+              <a href="https://carbuzz.com/news/porsche-celebrates-70th-anniversary-in-america">Wow! 70 years of Porsche in USA!</a>
+              <a href="https://www.autoweek.com/car-life/classic-cars/a34041008/the-datsun-240z-offered-elegant-performance-in-a-muscle-car-world/">Datsun 240Z In Retrospect</a>
+              <a href="https://www.hotcars.com/15-most-desirable-japanese-sports-cars-from-the-70s-and-80s/">You know you want any of these Toyotas!</a>
+
             </div>
          </div>
        </div><!--end module 10-->
@@ -229,19 +278,21 @@
        <div class="col-md-6">
          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
            <div class="col p-4 d-flex flex-column position-static">
-             <h3 class="mb-0"><strong class="d-inline-block mb-2 text-success">Yummly</strong></h3>
-             <a href="www.google.com">article 1</a>
-             <a href="www.google.com">article 2</a>
-             </div>
+             <h3 class="mb-0"><strong class="d-inline-block mb-2 text-primary3">Yummly</strong></h3>
+             <a href="https://www.prnewswire.com/news-releases/whirlpools-yummly-food-platform-introducing-smart-thermometer-that-monitors-and-alerts-for-stress-free-precision-cooking-300981269.html">Smart Thermometer by Yummly® Food Platform</a>
+             <a href="https://www.androidpolice.com/2020/04/15/yummly-now-tailors-its-recipe-suggestions-based-on-whats-in-your-pantry/">Yummly now offers "Pantry Search"</a>
+             <a href="https://www.prnewswire.com/news-releases/yummly-pro-brings-the-digital-kitchen-to-life-with-immersive-cooking-curriculum-300772974.html">Learn to cook recipes from Top Chef's using Yummly® Pro feature!</a>
+          </div>
          </div>
        </div><!--end module 11-->
        <!--module 12-->
        <div class="col-md-6">
          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
            <div class="col p-4 d-flex flex-column position-static">
-             <h3 class="mb-0"><strong class="d-inline-block mb-2 text-success">Food News...</strong></h3>
-             <a href="www.google.com">article 1</a>
-             <a href="www.google.com">article 2</a>
+             <h3 class="mb-0"><strong class="d-inline-block mb-2 text-success">Smart Food News...</strong></h3>
+             <a href="https://news.samsung.com/us/slide-in-range-oven-front-control/">Samsung Kitchen showcase is very impresive!</a>
+             <a href="https://www.hfndigital.com/housewares/ge-re-enters-small-appliance-category/">GE appliances creating new small kitchen product!</a>
+             <a href="https://asia.nikkei.com/Business/Electronics/LG-cleans-up-by-going-upmarket-in-US-and-European-kitchens">LG influencing heavily in US and European kitchens</a>
            </div>
         </div>
       </div><!--end module 12-->
@@ -262,9 +313,9 @@
               src="http://www.w3.org/Icons/valid-xhtml10"
               alt="Valid XHTML 1.0!" height="31" width="88" /></a>
       </p>
-      <p>
-        <a href="#">Back to top</a>
-      </p>
+      <a href = "***/index_IN_PROGRESS.html#" style = "float: right;"
+      class = "btn btn-primary btn-lg">TOP <span class = "glyphicon glyphicon-arrow-up"></span>
+      </a>
     </footer>
 
   </body>
